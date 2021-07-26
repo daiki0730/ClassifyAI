@@ -13,6 +13,7 @@
 		A63DF6AE26A5D1EB006497B3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A63DF6AC26A5D1EB006497B3 /* Main.storyboard */; };
 		A63DF6B026A5D1EC006497B3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A63DF6AF26A5D1EC006497B3 /* Assets.xcassets */; };
 		A63DF6B326A5D1EC006497B3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A63DF6B126A5D1EC006497B3 /* LaunchScreen.storyboard */; };
+		A6B6D30726ADB943001D2CD8 /* animal_cnn_aug.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = A6B6D30626ADB943001D2CD8 /* animal_cnn_aug.mlmodel */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		A63DF6AF26A5D1EC006497B3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A63DF6B226A5D1EC006497B3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A63DF6B426A5D1EC006497B3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A6B6D30626ADB943001D2CD8 /* animal_cnn_aug.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; name = animal_cnn_aug.mlmodel; path = ../../animalai/animal_cnn_aug.mlmodel; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +61,7 @@
 				A63DF6A626A5D1EB006497B3 /* AppDelegate.swift */,
 				A63DF6A826A5D1EB006497B3 /* SceneDelegate.swift */,
 				A63DF6AA26A5D1EB006497B3 /* ViewController.swift */,
+				A6B6D30626ADB943001D2CD8 /* animal_cnn_aug.mlmodel */,
 				A63DF6AC26A5D1EB006497B3 /* Main.storyboard */,
 				A63DF6AF26A5D1EC006497B3 /* Assets.xcassets */,
 				A63DF6B126A5D1EC006497B3 /* LaunchScreen.storyboard */,
@@ -139,6 +142,7 @@
 			files = (
 				A63DF6AB26A5D1EB006497B3 /* ViewController.swift in Sources */,
 				A63DF6A726A5D1EB006497B3 /* AppDelegate.swift in Sources */,
+				A6B6D30726ADB943001D2CD8 /* animal_cnn_aug.mlmodel in Sources */,
 				A63DF6A926A5D1EB006497B3 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
