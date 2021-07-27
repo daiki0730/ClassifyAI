@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina6_1" orientation="portrait" appearance="light"/>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina5_9" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17125"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -13,13 +13,16 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="ClassifyAI" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="Nmc-dv-yuD">
-                                <rect key="frame" x="20" y="404" width="374" height="150"/>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="Nmc-dv-yuD">
+                                <rect key="frame" x="20" y="404" width="335" height="209"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <constraints>
+                                    <constraint firstAttribute="width" secondItem="Nmc-dv-yuD" secondAttribute="height" multiplier="187:75" id="OOE-y7-7vK"/>
+                                    <constraint firstAttribute="width" constant="100" id="crq-TG-mCm"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="200" id="uAB-dc-XQ1"/>
                                     <constraint firstAttribute="height" constant="150" id="wKu-Oq-Cgp"/>
                                 </constraints>
                                 <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
@@ -28,7 +31,7 @@
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                             <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AaP-37-daI">
-                                <rect key="frame" x="20" y="586" width="374" height="36"/>
+                                <rect key="frame" x="15" y="704" width="335" height="36"/>
                                 <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <state key="normal" title="写真を撮る">
@@ -39,7 +42,7 @@
                                 </connections>
                             </button>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Kwd-Hl-d99">
-                                <rect key="frame" x="20" y="55" width="374" height="300"/>
+                                <rect key="frame" x="20" y="79" width="335" height="300"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="300" id="eH6-Sf-swI"/>
                                 </constraints>
@@ -48,11 +51,25 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="AaP-37-daI" firstAttribute="top" secondItem="Nmc-dv-yuD" secondAttribute="bottom" constant="30" id="2tU-uq-IQx"/>
+                            <constraint firstItem="Nmc-dv-yuD" firstAttribute="top" secondItem="Kwd-Hl-d99" secondAttribute="bottom" constant="30" id="3g1-Ot-Rii"/>
+                            <constraint firstItem="Nmc-dv-yuD" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="5" id="6Fn-SO-rAM"/>
+                            <constraint firstAttribute="trailing" secondItem="Kwd-Hl-d99" secondAttribute="trailing" constant="10" id="BfE-Kb-5O7"/>
                             <constraint firstItem="Nmc-dv-yuD" firstAttribute="top" secondItem="Kwd-Hl-d99" secondAttribute="bottom" constant="30" id="MZx-si-hd0"/>
+                            <constraint firstItem="Nmc-dv-yuD" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="30" id="P0A-e9-Z3s"/>
                             <constraint firstItem="Kwd-Hl-d99" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="PLg-Wm-CPJ"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Kwd-Hl-d99" secondAttribute="trailing" constant="20" id="T9i-ob-Ayu"/>
+                            <constraint firstItem="Nmc-dv-yuD" firstAttribute="top" secondItem="Kwd-Hl-d99" secondAttribute="bottom" constant="30" id="doo-A1-QSL"/>
                             <constraint firstItem="Kwd-Hl-d99" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="30" id="dvf-2m-ikY"/>
                             <constraint firstItem="AaP-37-daI" firstAttribute="top" secondItem="Nmc-dv-yuD" secondAttribute="bottom" constant="30" id="gp2-7J-2FH"/>
+                            <constraint firstAttribute="trailing" secondItem="Nmc-dv-yuD" secondAttribute="trailing" constant="5" id="iz7-cv-7f4"/>
+                            <constraint firstItem="Kwd-Hl-d99" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="10" id="kXj-IT-MGC"/>
+                            <constraint firstItem="Nmc-dv-yuD" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="lQx-Pt-dZA"/>
+                            <constraint firstAttribute="trailing" secondItem="Nmc-dv-yuD" secondAttribute="trailing" constant="20" id="rDP-7O-ler"/>
+                            <constraint firstItem="Nmc-dv-yuD" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="20" id="sVf-3Z-p6A"/>
+                            <constraint firstAttribute="trailing" secondItem="Nmc-dv-yuD" secondAttribute="trailing" constant="30" id="t1F-uU-Dc7"/>
+                            <constraint firstItem="Kwd-Hl-d99" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="10" id="y20-Al-P9V"/>
+                            <constraint firstAttribute="trailing" secondItem="Nmc-dv-yuD" secondAttribute="trailing" constant="20" id="yLt-hg-X9s"/>
                         </constraints>
                     </view>
                     <connections>
@@ -62,7 +79,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="137.68115942028987" y="88.392857142857139"/>
+            <point key="canvasLocation" x="136.80000000000001" y="87.931034482758619"/>
         </scene>
     </scenes>
     <resources>
