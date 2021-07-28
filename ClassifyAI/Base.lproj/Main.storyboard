@@ -17,11 +17,13 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="Nmc-dv-yuD">
-                                <rect key="frame" x="20" y="404" width="335" height="209"/>
+                                <rect key="frame" x="20" y="404" width="335" height="150"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <constraints>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="190" id="3CS-Rh-hwP"/>
                                     <constraint firstAttribute="width" secondItem="Nmc-dv-yuD" secondAttribute="height" multiplier="187:75" id="OOE-y7-7vK"/>
                                     <constraint firstAttribute="width" constant="100" id="crq-TG-mCm"/>
+                                    <constraint firstAttribute="width" relation="lessThanOrEqual" constant="335" id="iku-DX-5fE"/>
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="200" id="uAB-dc-XQ1"/>
                                     <constraint firstAttribute="height" constant="150" id="wKu-Oq-Cgp"/>
                                 </constraints>
@@ -30,9 +32,13 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AaP-37-daI">
-                                <rect key="frame" x="15" y="704" width="335" height="36"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AaP-37-daI">
+                                <rect key="frame" x="20" y="652" width="335" height="30"/>
                                 <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="TsN-wN-Pbp"/>
+                                    <constraint firstAttribute="width" constant="198" id="lCe-Dn-Xsh"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <state key="normal" title="写真を撮る">
                                     <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -41,10 +47,12 @@
                                     <action selector="takePhoto:" destination="BYZ-38-t0r" eventType="touchUpInside" id="qXh-HC-Twj"/>
                                 </connections>
                             </button>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Kwd-Hl-d99">
-                                <rect key="frame" x="20" y="79" width="335" height="300"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Kwd-Hl-d99">
+                                <rect key="frame" x="10" y="74" width="345" height="368"/>
                                 <constraints>
+                                    <constraint firstAttribute="width" constant="240" id="Y4w-t2-7tM"/>
                                     <constraint firstAttribute="height" constant="300" id="eH6-Sf-swI"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="216" id="ycZ-pL-OD2"/>
                                 </constraints>
                             </imageView>
                         </subviews>
@@ -53,23 +61,30 @@
                         <constraints>
                             <constraint firstItem="AaP-37-daI" firstAttribute="top" secondItem="Nmc-dv-yuD" secondAttribute="bottom" constant="30" id="2tU-uq-IQx"/>
                             <constraint firstItem="Nmc-dv-yuD" firstAttribute="top" secondItem="Kwd-Hl-d99" secondAttribute="bottom" constant="30" id="3g1-Ot-Rii"/>
+                            <constraint firstItem="Nmc-dv-yuD" firstAttribute="top" secondItem="Kwd-Hl-d99" secondAttribute="bottom" constant="400" id="4cz-wY-Z68"/>
                             <constraint firstItem="Nmc-dv-yuD" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="5" id="6Fn-SO-rAM"/>
                             <constraint firstAttribute="trailing" secondItem="Kwd-Hl-d99" secondAttribute="trailing" constant="10" id="BfE-Kb-5O7"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="AaP-37-daI" secondAttribute="bottom" constant="96" id="Erz-Xm-bZb"/>
                             <constraint firstItem="Nmc-dv-yuD" firstAttribute="top" secondItem="Kwd-Hl-d99" secondAttribute="bottom" constant="30" id="MZx-si-hd0"/>
                             <constraint firstItem="Nmc-dv-yuD" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="30" id="P0A-e9-Z3s"/>
                             <constraint firstItem="Kwd-Hl-d99" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="PLg-Wm-CPJ"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Kwd-Hl-d99" secondAttribute="trailing" constant="20" id="T9i-ob-Ayu"/>
+                            <constraint firstItem="Kwd-Hl-d99" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="30" id="XHx-5O-ccO"/>
+                            <constraint firstItem="AaP-37-daI" firstAttribute="top" secondItem="Nmc-dv-yuD" secondAttribute="bottom" constant="182" id="cFl-al-p5Q"/>
                             <constraint firstItem="Nmc-dv-yuD" firstAttribute="top" secondItem="Kwd-Hl-d99" secondAttribute="bottom" constant="30" id="doo-A1-QSL"/>
                             <constraint firstItem="Kwd-Hl-d99" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="30" id="dvf-2m-ikY"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Nmc-dv-yuD" secondAttribute="trailing" constant="20" id="dxH-Bb-lRe"/>
                             <constraint firstItem="AaP-37-daI" firstAttribute="top" secondItem="Nmc-dv-yuD" secondAttribute="bottom" constant="30" id="gp2-7J-2FH"/>
                             <constraint firstAttribute="trailing" secondItem="Nmc-dv-yuD" secondAttribute="trailing" constant="5" id="iz7-cv-7f4"/>
                             <constraint firstItem="Kwd-Hl-d99" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="10" id="kXj-IT-MGC"/>
                             <constraint firstItem="Nmc-dv-yuD" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="lQx-Pt-dZA"/>
+                            <constraint firstItem="AaP-37-daI" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="ojI-VS-KfA"/>
                             <constraint firstAttribute="trailing" secondItem="Nmc-dv-yuD" secondAttribute="trailing" constant="20" id="rDP-7O-ler"/>
                             <constraint firstItem="Nmc-dv-yuD" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="20" id="sVf-3Z-p6A"/>
                             <constraint firstAttribute="trailing" secondItem="Nmc-dv-yuD" secondAttribute="trailing" constant="30" id="t1F-uU-Dc7"/>
                             <constraint firstItem="Kwd-Hl-d99" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="10" id="y20-Al-P9V"/>
                             <constraint firstAttribute="trailing" secondItem="Nmc-dv-yuD" secondAttribute="trailing" constant="20" id="yLt-hg-X9s"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="AaP-37-daI" secondAttribute="trailing" constant="20" id="z6q-kK-hHV"/>
                         </constraints>
                     </view>
                     <connections>
